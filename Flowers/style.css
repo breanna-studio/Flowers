@@ -1,0 +1,270 @@
+
+*{
+	box-sizing:border-box;
+}
+h1{
+	font-size:50px;
+	color:white;
+}
+body{
+	margin-top:80px;
+	font-family: "VT323", monospace;
+	background: repeating-radial-gradient(circle, white 30px, black 40px, white 30px);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: repeat;
+	z-index:-1;
+	height:800px;
+	transition: transform 1s ease 0s;
+}
+
+#name{
+	color:red;
+	font-size:12px;
+	width:500px;
+	height: 50px;
+	bottom:0;
+	right:0;
+}
+
+body:hover{
+	transform: background-size: 30%;
+}
+p{
+	position:fixed;
+	color:white;
+	background-color:black;
+	margin: 0 10%;
+	text-align: center;
+	font-size: 30px;
+	line-height: 80px;
+	padding:20px;
+}
+#montage{
+	display:inline-block;
+	width: 70%;
+	margin: 20px auto;
+	padding: 3px;
+	line-height: 80px;
+	font-family: "VT323", monospace;
+	font-size: 45px;
+	vertical-align: middle;
+	color: white;
+}
+
+#fixed-navbar{
+	background-color:black;
+	width:100%;
+	position:fixed;
+	top: 0;
+	left: 0;
+	height:80px;
+	z-index:100;
+}
+
+#fixed-navbar .container{
+	width:960px;
+	margin: 0 auto;
+	padding-left:20px;
+}
+#main-nav{
+	display:inline-block;
+	font-family: "VT323", monospace;
+	text-decoration:none;
+	text-align:left;
+	width:30%;
+	height:auto;
+	line-height: 80px;
+	font-size: 30px;
+	vertical-align: middle;
+	transition: all 0.25s ease;
+
+
+}
+
+#fixed-navbar a{
+	color:crimson;
+	text-decoration:none;
+}
+
+#fixed-navbar a:link{
+	color:white;
+}
+
+#fixed-navbar a:visited{
+	color:crimson;
+}
+
+#fixed-navbar a:hover{
+	color:white;
+}
+
+#fixed-navbar a:active{
+	color: white;
+}
+
+/*body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	text-align: center;
+	background: radial-gradient(circle, red, crimson, white, purple, blue);
+}*/
+
+
+
+/* DEMOS */
+/*
+[id^="background-"] {
+	width:100% cover;
+	opacity:1;
+}*/
+
+#image-wrap{
+	margin-top:80px;
+	background-image: url("flowers-bg.png");
+	background-position: center center; /*left/center, bottom/right*/
+	background-size: contain; /*, px, %, cover, contain*/
+	background-repeat: repeat-x, repeat-y; /*repeat-x, repeat-y, repeat, no repeat*/
+	background-attachment: fixed;
+	z-index:1;
+}
+
+
+
+#hand-flowers{
+	position:absolute;
+	top:7%;
+	left:0;
+	width:100px auto;
+	transition: transform 2s ease 0s;
+}
+
+#hand-flowers-2{
+	position:absolute;
+	top:35%;
+	left: 0;
+	width:100px auto;
+	transition: transform 2s ease 0s;
+	z-index:2;
+}
+
+
+#hand-flowers-4{
+	position:absolute;
+	width:100px auto;
+	top:60%;
+	left: 0;
+	transition: transform 2s ease 0s;
+	z-index:3;
+}
+
+[id^="hand-flowers"]:hover {
+	transform: translate(100px, 0);
+
+}
+
+#foliage-1{
+	position:fixed;
+	bottom:0;
+	width:1000px;
+	object-fit:contain;
+	z-index: 0;
+
+
+}
+
+div #redflower{
+	position:fixed;
+	bottom:0;
+	right:30%;
+	width:10px, 10px;
+	z-index: 4;
+	transition: transform 1.5s ease 0s;
+}
+
+#redflower:hover{
+	transform: scale(1.5) rotate(20deg);
+}
+
+#redflower-2{
+	position:fixed;
+	bottom: 0;
+	right: 10%;
+	width: 100px auto;
+	transition: transform 1s ease 0s;
+}
+
+#redflower-2:hover{
+	transform: scale(1.3) rotate(-20deg);
+}
+
+#redflower-3{
+	position:fixed;
+	bottom:0;
+	right: 75%;
+	width:50px;
+	transition: transform 1s ease 0s;
+}
+
+#redflower-3:hover{
+	transform: scale(1.7) rotate(30deg);
+}
+#tulips{
+	position:fixed;
+	bottom: 0;
+	right: 0;
+}
+
+/*#background-1{
+	background: repeating-radial-gradient(circle, purple 30px, blue 30px, white 40px);
+	background-attachment: fixed;
+	background-size: 100%;
+	transition: background-size 6s ease;
+}
+
+#background-1:hover {
+	background-size: 60px 60px;
+}
+
+/*#background-4{
+	background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	background-attachment: fixed;
+} *//*vignette
+/*
+#background-5{
+	width:50%;
+	border-radius: 100%;
+	background:linear-gradient(180deg, purple, white, deepskyblue);
+	 center center / 200px auto;
+	transition: transform 3s ease;
+	opacity:0.75;
+
+}
+
+#background-5:active{
+	transform: rotate(180deg);
+}*/*/
+
+
+/* EXERCISES*/
+
+/* 
+	Exercise: Make a repeating background image
+*/
+
+/* 
+	Exericse: Make a vertical linear gradient more than two colors 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients#Linear_gradients
+*/
+
+/*
+	Exercise: Make a radial gradient
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients#Radial_gradients
+*/
+
+
+
+/* 
+	Exercise: Create a gradient with an animation/transition. Try using the
+	background-position or background-size. 
+*/
